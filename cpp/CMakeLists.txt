@@ -7,6 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON) # enforce standard
 include_directories(include) # headers live here
 
 add_library(core
+  src/args.cpp
+  src/folds.cpp
   src/tsv_reader.cpp
   src/text_clean.cpp
   src/tokenizer.cpp

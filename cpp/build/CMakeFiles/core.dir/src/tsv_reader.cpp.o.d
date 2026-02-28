@@ -1,6 +1,7 @@
 CMakeFiles/core.dir/src/tsv_reader.cpp.o: \
   /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/tsv_reader.cpp \
   /Users/aidancolvin/-sentiment-analysis-v3/cpp/include/tsv_reader.h \
+  /Users/aidancolvin/-sentiment-analysis-v3/cpp/include/rows.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \

@@ -1,4 +1,6 @@
 #pragma once
+
+#include "rows.h" // TrainRow/TestRow
 #include <vector> // vector
 #include "sparse_vec.h" // SparseVec
 
