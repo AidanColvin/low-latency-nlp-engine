@@ -1,0 +1,5 @@
+/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles/core.dir
+/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles/train_cpp.dir
+/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles/predict_cpp.dir
+/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles/edit_cache.dir
+/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles/rebuild_cache.dir
