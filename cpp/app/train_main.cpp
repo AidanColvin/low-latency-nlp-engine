@@ -2,6 +2,7 @@
 #include <filesystem>
 #include <vector>
 #include <numeric>
+#include "model_io.h" // save_model/load_model
 
 #include "args.h"
 #include "folds.h"
@@ -9,13 +10,42 @@
 #include "dataset.h"
 #include "sgd_trainer.h"
 #include "model_io.h"
-#include "json_write.h"
+
+#include <fstream>
+
+struct MiniJson {
+  std::ofstream out;
+  bool first = true;
+  MiniJson(const std::string& path) : out(path) {
+    out << "{";
+  }
+  void kv(const std::string& k, const std::string& v) {
+    if (!first) out << ",";
+    first = false;
+    out << "\n  \"" << k << "\": \"" << v << "\"";
+  }
+  void kv(const std::string& k, int v) {
+    if (!first) out << ",";
+    first = false;
+    out << "\n  \"" << k << "\": " << v;
+  }
+  void kv(const std::string& k, double v) {
+    if (!first) out << ",";
+    first = false;
+    out << "\n  \"" << k << "\": " << v;
+  }
+  void close() {
+    out << "\n}\n";
+    out.close();
+  }
+};
+
 
 static void ensure_dir(const std::string& p) { std::filesystem::create_directories(p); }
 
 static void checkpoint(const std::string& out_dir, const std::string& stage, const std::string& status) {
   ensure_dir(out_dir);
-  JsonWriter jw(out_dir + "/checkpoint.json");
+  MiniJson jw(out_dir + "/checkpoint.json");
   jw.kv("stage", stage);
   jw.kv("status", status);
   jw.close();
@@ -96,7 +126,7 @@ int main(int argc, char** argv) {
     double best = 0.0;
     for (double x : accs) if (x > best) best = x;
 
-    JsonWriter jw(out_dir + "/cv_metrics.json");
+    MiniJson jw(out_dir + "/cv_metrics.json");
     jw.kv("train_path", train_path);
     jw.kv("mode", mode);
     jw.kv("folds", folds);
@@ -131,9 +161,9 @@ int main(int argc, char** argv) {
 
     auto model = train_sgd_logreg(all, all, dim, cfg2, train_acc, dummy_valid);
 
-    save_model(out_dir + "/model.bin", model);
+    save_model_bin(out_dir + "/model.bin", model);
 
-    JsonWriter jw(out_dir + "/fit_metrics.json");
+    MiniJson jw(out_dir + "/fit_metrics.json");
     jw.kv("train_path", train_path);
     jw.kv("mode", mode);
     jw.kv("dim", dim);
