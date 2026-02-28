@@ -1,4 +1,4 @@
-# low-latency-nlp-engine
+# Low Latency NLP Engine
 
 > A hybrid Python–C++ machine learning system for large-scale sentiment classification — featuring a custom C++ training and inference backend, automated model selection via cross-validation, and a reproducible end-to-end pipeline from raw text to deployment-ready artifacts.
 
