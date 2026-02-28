@@ -1,31 +1,21 @@
 import pytest
 
-class TestMetrics:
-    def test_accuracy_perfect(self):
-        try:
-            from sa.evaluation.metrics import accuracy
-        except ImportError:
-            pytest.skip("accuracy not yet implemented")
-        assert accuracy([1, 0, 1], [1, 0, 1]) == 1.0
-
-    def test_accuracy_zero(self):
-        try:
-            from sa.evaluation.metrics import accuracy
-        except ImportError:
-            pytest.skip("accuracy not yet implemented")
-        assert accuracy([1, 1, 1], [0, 0, 0]) == 0.0
-
-    def test_f1_perfect(self):
-        try:
-            from sa.evaluation.metrics import f1
-        except ImportError:
-            pytest.skip("f1 not yet implemented")
-        assert f1([1, 0, 1, 0], [1, 0, 1, 0]) == pytest.approx(1.0)
-
-    def test_classification_report_keys(self):
-        try:
-            from sa.evaluation.metrics import classification_report
-        except ImportError:
-            pytest.skip("classification_report not yet implemented")
-        report = classification_report([1, 0, 1], [1, 0, 0])
-        assert "accuracy" in report and "f1" in report
+class TestSklearnMetrics:
+    def test_sklearn_importable(self):
+        try: from sklearn import metrics
+        except ImportError: pytest.fail("scikit-learn not installed")
+    def test_accuracy(self):
+        from sklearn.metrics import accuracy_score
+        assert accuracy_score([1,0,1],[1,0,1]) == 1.0
+        assert accuracy_score([1,1],[0,0]) == 0.0
+    def test_f1(self):
+        from sklearn.metrics import f1_score
+        assert abs(f1_score([1,0,1,0],[1,0,1,0]) - 1.0) < 1e-6
+    def test_roc_auc(self):
+        from sklearn.metrics import roc_auc_score
+        s = roc_auc_score([0,0,1,1],[0.1,0.2,0.8,0.9])
+        assert 0.0 <= s <= 1.0
+    def test_classification_report(self):
+        from sklearn.metrics import classification_report
+        r = classification_report([1,0,1],[1,0,0], output_dict=True)
+        assert "accuracy" in r

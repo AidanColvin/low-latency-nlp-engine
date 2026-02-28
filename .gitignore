@@ -1,0 +1,6 @@
+# auto-created
+__pycache__/
+*.pyc
+build/
+.mypy_cache/
+.pytest_cache/

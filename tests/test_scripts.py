@@ -1,17 +1,22 @@
-import importlib.util, os, pytest
+import os, ast, pytest
 
-class TestScripts:
-    def test_scripts_dir_exists(self):
-        assert os.path.isdir("src/scripts"), "src/scripts not found"
+DL_PIPELINE = "src/scripts/dl_pipeline.py"
 
-    def test_dl_pipeline_exists(self):
-        assert os.path.isfile("src/scripts/dl_pipeline.py"), "dl_pipeline.py not found"
-
-    def test_dl_pipeline_importable(self):
-        spec = importlib.util.spec_from_file_location("dl_pipeline", "src/scripts/dl_pipeline.py")
-        if spec is None:
-            pytest.skip("could not load spec")
-        try:
-            spec.loader.exec_module(importlib.util.module_from_spec(spec))
-        except Exception as e:
-            pytest.skip(f"import raised: {e}")
+class TestDLPipeline:
+    def test_exists(self):
+        assert os.path.isfile(DL_PIPELINE)
+    def test_not_empty(self):
+        assert os.path.getsize(DL_PIPELINE) > 0
+    def test_valid_syntax(self):
+        with open(DL_PIPELINE) as f: src = f.read()
+        try: ast.parse(src)
+        except SyntaxError as e: pytest.fail(f"Syntax error: {e}")
+    def test_has_imports(self):
+        with open(DL_PIPELINE) as f: src = f.read()
+        tree = ast.parse(src)
+        imports = [n for n in ast.walk(tree) if isinstance(n,(ast.Import,ast.ImportFrom))]
+        assert len(imports) > 0, "dl_pipeline.py has no imports"
+    def test_has_meaningful_code(self):
+        with open(DL_PIPELINE) as f: src = f.read()
+        lines = [l for l in src.splitlines() if l.strip() and not l.strip().startswith("#")]
+        assert len(lines) >= 5
