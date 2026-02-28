@@ -2,8 +2,6 @@
 
 > A hybrid Python–C++ machine learning system for large-scale sentiment classification — featuring a custom C++ training and inference backend, automated model selection via cross-validation, and a reproducible end-to-end pipeline from raw text to deployment-ready artifacts.
 
-Built for [SP26 INLS 642: What Makes a Positive Review?](https://kaggle.com/competitions/sp-26-inls-642-what-makes-a-positive-review) · Data: [Amazon Customer Reviews](https://registry.opendata.aws/amazon-reviews/)
-
 ---
 
 ## Why This Project
