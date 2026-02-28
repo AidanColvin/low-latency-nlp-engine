@@ -3,6 +3,9 @@
 #include "dataset.h" // dataset
 
 struct TrainConfig {
+  int seed; // shuffle seed
+  int patience; // early stop patience
+
   int epochs; // passes over data
   float lr; // learning rate
   float l2; // L2 regularization

@@ -11,9 +11,11 @@ LogRegModel train_sgd_logreg(const Dataset& train, const Dataset& valid, int dim
   std::vector<int> order(train.size()); // indices
   std::iota(order.begin(), order.end(), 0); // 0..n-1
 
-  std::mt19937 rng(123); // deterministic shuffle
+  std::mt19937 rng(cfg.seed); // deterministic shuffle // deterministic shuffle
 
-  for (int ep = 0; ep < cfg.epochs; ep++) {
+  float best_valid = -1.0f; // best valid acc
+int bad = 0; // patience counter
+for (int ep = 0; ep < cfg.epochs; ep++) {
     std::shuffle(order.begin(), order.end(), rng); // random order each epoch
 
     for (int ii : order) {
@@ -33,9 +35,11 @@ LogRegModel train_sgd_logreg(const Dataset& train, const Dataset& valid, int dim
     }
   }
 
-  out_train_acc = accuracy_dataset(model, train, cfg.thr); // train accuracy
+      float v = accuracy_dataset(model, valid, cfg.thr); // epoch valid acc
+    if (v > best_valid) { best_valid = v; bad = 0; } else { bad++; } // track improvement
+    if (cfg.patience > 0 && bad >= cfg.patience) break; // early stop
+out_train_acc = accuracy_dataset(model, train, cfg.thr); // train accuracy
   out_valid_acc = accuracy_dataset(model, valid, cfg.thr); // valid accuracy
   return model; // trained model
 }
 
-LogRegModel SGDTrainer::fit_all(const Dataset& train) { return fit(train, train); }
