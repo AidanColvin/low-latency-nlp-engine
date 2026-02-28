@@ -1,0 +1,9 @@
+{
+  "stage": "predict_cpp",
+  "status": "ok",
+  "input_test_tsv": "data/raw/test.tsv",
+  "model_path": "outputs/04_train_cpp/logreg_hashngram_5fold_v1_final/model.bin",
+  "submission_csv": "outputs/05_predict_cpp/logreg_hashngram_5fold_v1_submission.csv",
+  "submission_parquet": "outputs/05_predict_cpp/logreg_hashngram_5fold_v1_submission.parquet",
+  "timestamp": "2026-02-28T11:19:44.506419"
+}

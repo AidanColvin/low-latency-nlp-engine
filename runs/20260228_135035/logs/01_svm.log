@@ -1,0 +1,4 @@
+=== MODEL #1: SVM (SGD hinge) TFIDF word(1,2) ===
+ASSUMED ACCURACY (5-fold): 0.902521 ± 0.002691
+Training on FULL train ...
+Saved: runs/20260228_135035/python/svm_word12/submission.csv

@@ -1,0 +1,8 @@
+{
+  "stage": "train_cpp",
+  "status": "ok",
+  "input_train_tsv": "data/raw/train.tsv",
+  "output_dir": "outputs/04_train_cpp/logreg_hashngram_5fold_v1_final",
+  "expected_artifact": "model.bin",
+  "timestamp": "2026-02-28T11:19:44.506130"
+}

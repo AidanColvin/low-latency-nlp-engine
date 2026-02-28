@@ -1,0 +1,4 @@
+=== MODEL #2: LR TFIDF word(1,2) C=4.0 ===
+ASSUMED ACCURACY (5-fold): 0.904454 ± 0.002761
+Training on FULL train ...
+Saved: runs/20260228_135035/python/lr_word12_c4/submission.csv
