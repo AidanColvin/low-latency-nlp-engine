@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/core.dir/src/args.cpp.o"
+  "CMakeFiles/core.dir/src/args.cpp.o.d"
   "CMakeFiles/core.dir/src/csv_write.cpp.o"
   "CMakeFiles/core.dir/src/csv_write.cpp.o.d"
   "CMakeFiles/core.dir/src/dataset.cpp.o"
   "CMakeFiles/core.dir/src/dataset.cpp.o.d"
+  "CMakeFiles/core.dir/src/folds.cpp.o"
+  "CMakeFiles/core.dir/src/folds.cpp.o.d"
   "CMakeFiles/core.dir/src/hashing.cpp.o"
   "CMakeFiles/core.dir/src/hashing.cpp.o.d"
   "CMakeFiles/core.dir/src/json_write.cpp.o"

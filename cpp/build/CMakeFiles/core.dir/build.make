@@ -72,10 +72,38 @@ include CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/codegen:
 .PHONY : CMakeFiles/core.dir/codegen
 
+CMakeFiles/core.dir/src/args.cpp.o: CMakeFiles/core.dir/flags.make
+CMakeFiles/core.dir/src/args.cpp.o: /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/args.cpp
+CMakeFiles/core.dir/src/args.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/core.dir/src/args.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/args.cpp.o -MF CMakeFiles/core.dir/src/args.cpp.o.d -o CMakeFiles/core.dir/src/args.cpp.o -c /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/args.cpp
+
+CMakeFiles/core.dir/src/args.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/core.dir/src/args.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/args.cpp > CMakeFiles/core.dir/src/args.cpp.i
+
+CMakeFiles/core.dir/src/args.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/core.dir/src/args.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/args.cpp -o CMakeFiles/core.dir/src/args.cpp.s
+
+CMakeFiles/core.dir/src/folds.cpp.o: CMakeFiles/core.dir/flags.make
+CMakeFiles/core.dir/src/folds.cpp.o: /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/folds.cpp
+CMakeFiles/core.dir/src/folds.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/core.dir/src/folds.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/folds.cpp.o -MF CMakeFiles/core.dir/src/folds.cpp.o.d -o CMakeFiles/core.dir/src/folds.cpp.o -c /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/folds.cpp
+
+CMakeFiles/core.dir/src/folds.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/core.dir/src/folds.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/folds.cpp > CMakeFiles/core.dir/src/folds.cpp.i
+
+CMakeFiles/core.dir/src/folds.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/core.dir/src/folds.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/folds.cpp -o CMakeFiles/core.dir/src/folds.cpp.s
+
 CMakeFiles/core.dir/src/tsv_reader.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/tsv_reader.cpp.o: /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/tsv_reader.cpp
 CMakeFiles/core.dir/src/tsv_reader.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/core.dir/src/tsv_reader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/core.dir/src/tsv_reader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/tsv_reader.cpp.o -MF CMakeFiles/core.dir/src/tsv_reader.cpp.o.d -o CMakeFiles/core.dir/src/tsv_reader.cpp.o -c /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/tsv_reader.cpp
 
 CMakeFiles/core.dir/src/tsv_reader.cpp.i: cmake_force
@@ -89,7 +117,7 @@ CMakeFiles/core.dir/src/tsv_reader.cpp.s: cmake_force
 CMakeFiles/core.dir/src/text_clean.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/text_clean.cpp.o: /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/text_clean.cpp
 CMakeFiles/core.dir/src/text_clean.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/core.dir/src/text_clean.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/core.dir/src/text_clean.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/text_clean.cpp.o -MF CMakeFiles/core.dir/src/text_clean.cpp.o.d -o CMakeFiles/core.dir/src/text_clean.cpp.o -c /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/text_clean.cpp
 
 CMakeFiles/core.dir/src/text_clean.cpp.i: cmake_force
@@ -103,7 +131,7 @@ CMakeFiles/core.dir/src/text_clean.cpp.s: cmake_force
 CMakeFiles/core.dir/src/tokenizer.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/tokenizer.cpp.o: /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/tokenizer.cpp
 CMakeFiles/core.dir/src/tokenizer.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/core.dir/src/tokenizer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/core.dir/src/tokenizer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/tokenizer.cpp.o -MF CMakeFiles/core.dir/src/tokenizer.cpp.o.d -o CMakeFiles/core.dir/src/tokenizer.cpp.o -c /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/tokenizer.cpp
 
 CMakeFiles/core.dir/src/tokenizer.cpp.i: cmake_force
@@ -117,7 +145,7 @@ CMakeFiles/core.dir/src/tokenizer.cpp.s: cmake_force
 CMakeFiles/core.dir/src/ngrams.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/ngrams.cpp.o: /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/ngrams.cpp
 CMakeFiles/core.dir/src/ngrams.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/core.dir/src/ngrams.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/core.dir/src/ngrams.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/ngrams.cpp.o -MF CMakeFiles/core.dir/src/ngrams.cpp.o.d -o CMakeFiles/core.dir/src/ngrams.cpp.o -c /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/ngrams.cpp
 
 CMakeFiles/core.dir/src/ngrams.cpp.i: cmake_force
@@ -131,7 +159,7 @@ CMakeFiles/core.dir/src/ngrams.cpp.s: cmake_force
 CMakeFiles/core.dir/src/hashing.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/hashing.cpp.o: /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/hashing.cpp
 CMakeFiles/core.dir/src/hashing.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/core.dir/src/hashing.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/core.dir/src/hashing.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/hashing.cpp.o -MF CMakeFiles/core.dir/src/hashing.cpp.o.d -o CMakeFiles/core.dir/src/hashing.cpp.o -c /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/hashing.cpp
 
 CMakeFiles/core.dir/src/hashing.cpp.i: cmake_force
@@ -145,7 +173,7 @@ CMakeFiles/core.dir/src/hashing.cpp.s: cmake_force
 CMakeFiles/core.dir/src/sparse_vec.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/sparse_vec.cpp.o: /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/sparse_vec.cpp
 CMakeFiles/core.dir/src/sparse_vec.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/core.dir/src/sparse_vec.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/core.dir/src/sparse_vec.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/sparse_vec.cpp.o -MF CMakeFiles/core.dir/src/sparse_vec.cpp.o.d -o CMakeFiles/core.dir/src/sparse_vec.cpp.o -c /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/sparse_vec.cpp
 
 CMakeFiles/core.dir/src/sparse_vec.cpp.i: cmake_force
@@ -159,7 +187,7 @@ CMakeFiles/core.dir/src/sparse_vec.cpp.s: cmake_force
 CMakeFiles/core.dir/src/dataset.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/dataset.cpp.o: /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/dataset.cpp
 CMakeFiles/core.dir/src/dataset.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/core.dir/src/dataset.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/core.dir/src/dataset.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/dataset.cpp.o -MF CMakeFiles/core.dir/src/dataset.cpp.o.d -o CMakeFiles/core.dir/src/dataset.cpp.o -c /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/dataset.cpp
 
 CMakeFiles/core.dir/src/dataset.cpp.i: cmake_force
@@ -173,7 +201,7 @@ CMakeFiles/core.dir/src/dataset.cpp.s: cmake_force
 CMakeFiles/core.dir/src/logreg_model.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/logreg_model.cpp.o: /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/logreg_model.cpp
 CMakeFiles/core.dir/src/logreg_model.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/core.dir/src/logreg_model.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/core.dir/src/logreg_model.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/logreg_model.cpp.o -MF CMakeFiles/core.dir/src/logreg_model.cpp.o.d -o CMakeFiles/core.dir/src/logreg_model.cpp.o -c /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/logreg_model.cpp
 
 CMakeFiles/core.dir/src/logreg_model.cpp.i: cmake_force
@@ -187,7 +215,7 @@ CMakeFiles/core.dir/src/logreg_model.cpp.s: cmake_force
 CMakeFiles/core.dir/src/metrics.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/metrics.cpp.o: /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/metrics.cpp
 CMakeFiles/core.dir/src/metrics.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/core.dir/src/metrics.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/core.dir/src/metrics.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/metrics.cpp.o -MF CMakeFiles/core.dir/src/metrics.cpp.o.d -o CMakeFiles/core.dir/src/metrics.cpp.o -c /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/metrics.cpp
 
 CMakeFiles/core.dir/src/metrics.cpp.i: cmake_force
@@ -201,7 +229,7 @@ CMakeFiles/core.dir/src/metrics.cpp.s: cmake_force
 CMakeFiles/core.dir/src/sgd_trainer.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/sgd_trainer.cpp.o: /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/sgd_trainer.cpp
 CMakeFiles/core.dir/src/sgd_trainer.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/core.dir/src/sgd_trainer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/core.dir/src/sgd_trainer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/sgd_trainer.cpp.o -MF CMakeFiles/core.dir/src/sgd_trainer.cpp.o.d -o CMakeFiles/core.dir/src/sgd_trainer.cpp.o -c /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/sgd_trainer.cpp
 
 CMakeFiles/core.dir/src/sgd_trainer.cpp.i: cmake_force
@@ -215,7 +243,7 @@ CMakeFiles/core.dir/src/sgd_trainer.cpp.s: cmake_force
 CMakeFiles/core.dir/src/model_io.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/model_io.cpp.o: /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/model_io.cpp
 CMakeFiles/core.dir/src/model_io.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/core.dir/src/model_io.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/core.dir/src/model_io.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/model_io.cpp.o -MF CMakeFiles/core.dir/src/model_io.cpp.o.d -o CMakeFiles/core.dir/src/model_io.cpp.o -c /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/model_io.cpp
 
 CMakeFiles/core.dir/src/model_io.cpp.i: cmake_force
@@ -229,7 +257,7 @@ CMakeFiles/core.dir/src/model_io.cpp.s: cmake_force
 CMakeFiles/core.dir/src/csv_write.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/csv_write.cpp.o: /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/csv_write.cpp
 CMakeFiles/core.dir/src/csv_write.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/core.dir/src/csv_write.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/core.dir/src/csv_write.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/csv_write.cpp.o -MF CMakeFiles/core.dir/src/csv_write.cpp.o.d -o CMakeFiles/core.dir/src/csv_write.cpp.o -c /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/csv_write.cpp
 
 CMakeFiles/core.dir/src/csv_write.cpp.i: cmake_force
@@ -243,7 +271,7 @@ CMakeFiles/core.dir/src/csv_write.cpp.s: cmake_force
 CMakeFiles/core.dir/src/json_write.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/json_write.cpp.o: /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/json_write.cpp
 CMakeFiles/core.dir/src/json_write.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/core.dir/src/json_write.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/core.dir/src/json_write.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/json_write.cpp.o -MF CMakeFiles/core.dir/src/json_write.cpp.o.d -o CMakeFiles/core.dir/src/json_write.cpp.o -c /Users/aidancolvin/-sentiment-analysis-v3/cpp/src/json_write.cpp
 
 CMakeFiles/core.dir/src/json_write.cpp.i: cmake_force
@@ -256,6 +284,8 @@ CMakeFiles/core.dir/src/json_write.cpp.s: cmake_force
 
 # Object files for target core
 core_OBJECTS = \
+"CMakeFiles/core.dir/src/args.cpp.o" \
+"CMakeFiles/core.dir/src/folds.cpp.o" \
 "CMakeFiles/core.dir/src/tsv_reader.cpp.o" \
 "CMakeFiles/core.dir/src/text_clean.cpp.o" \
 "CMakeFiles/core.dir/src/tokenizer.cpp.o" \
@@ -273,6 +303,8 @@ core_OBJECTS = \
 # External object files for target core
 core_EXTERNAL_OBJECTS =
 
+libcore.a: CMakeFiles/core.dir/src/args.cpp.o
+libcore.a: CMakeFiles/core.dir/src/folds.cpp.o
 libcore.a: CMakeFiles/core.dir/src/tsv_reader.cpp.o
 libcore.a: CMakeFiles/core.dir/src/text_clean.cpp.o
 libcore.a: CMakeFiles/core.dir/src/tokenizer.cpp.o
@@ -288,7 +320,7 @@ libcore.a: CMakeFiles/core.dir/src/csv_write.cpp.o
 libcore.a: CMakeFiles/core.dir/src/json_write.cpp.o
 libcore.a: CMakeFiles/core.dir/build.make
 libcore.a: CMakeFiles/core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX static library libcore.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/aidancolvin/-sentiment-analysis-v3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX static library libcore.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/core.dir/link.txt --verbose=$(VERBOSE)
 

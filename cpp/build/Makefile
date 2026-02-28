@@ -203,6 +203,30 @@ app/train_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/train_cpp.dir/build.make CMakeFiles/train_cpp.dir/app/train_main.cpp.s
 .PHONY : app/train_main.cpp.s
 
+src/args.o: src/args.cpp.o
+.PHONY : src/args.o
+
+# target to build an object file
+src/args.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/args.cpp.o
+.PHONY : src/args.cpp.o
+
+src/args.i: src/args.cpp.i
+.PHONY : src/args.i
+
+# target to preprocess a source file
+src/args.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/args.cpp.i
+.PHONY : src/args.cpp.i
+
+src/args.s: src/args.cpp.s
+.PHONY : src/args.s
+
+# target to generate assembly for a file
+src/args.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/args.cpp.s
+.PHONY : src/args.cpp.s
+
 src/csv_write.o: src/csv_write.cpp.o
 .PHONY : src/csv_write.o
 
@@ -250,6 +274,30 @@ src/dataset.s: src/dataset.cpp.s
 src/dataset.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/dataset.cpp.s
 .PHONY : src/dataset.cpp.s
+
+src/folds.o: src/folds.cpp.o
+.PHONY : src/folds.o
+
+# target to build an object file
+src/folds.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/folds.cpp.o
+.PHONY : src/folds.cpp.o
+
+src/folds.i: src/folds.cpp.i
+.PHONY : src/folds.i
+
+# target to preprocess a source file
+src/folds.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/folds.cpp.i
+.PHONY : src/folds.cpp.i
+
+src/folds.s: src/folds.cpp.s
+.PHONY : src/folds.s
+
+# target to generate assembly for a file
+src/folds.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/folds.cpp.s
+.PHONY : src/folds.cpp.s
 
 src/hashing.o: src/hashing.cpp.o
 .PHONY : src/hashing.o
@@ -532,12 +580,18 @@ help:
 	@echo "... app/train_main.o"
 	@echo "... app/train_main.i"
 	@echo "... app/train_main.s"
+	@echo "... src/args.o"
+	@echo "... src/args.i"
+	@echo "... src/args.s"
 	@echo "... src/csv_write.o"
 	@echo "... src/csv_write.i"
 	@echo "... src/csv_write.s"
 	@echo "... src/dataset.o"
 	@echo "... src/dataset.i"
 	@echo "... src/dataset.s"
+	@echo "... src/folds.o"
+	@echo "... src/folds.i"
+	@echo "... src/folds.s"
 	@echo "... src/hashing.o"
 	@echo "... src/hashing.i"
 	@echo "... src/hashing.s"

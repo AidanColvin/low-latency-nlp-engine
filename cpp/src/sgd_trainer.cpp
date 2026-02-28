@@ -37,3 +37,5 @@ LogRegModel train_sgd_logreg(const Dataset& train, const Dataset& valid, int dim
   out_valid_acc = accuracy_dataset(model, valid, cfg.thr); // valid accuracy
   return model; // trained model
 }
+
+LogRegModel SGDTrainer::fit_all(const Dataset& train) { return fit(train, train); }
