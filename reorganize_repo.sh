@@ -1,3 +1,3 @@
-```
-Then paste the entire script content, then type:
-```
+#!/usr/bin/env bash
+set -euo pipefail
+exec bash "scripts/scripts/reorganize_repo.sh" "$@"

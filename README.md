@@ -87,9 +87,9 @@ Three ways to run the system, matching different use cases:
 
 | Entry Point | Purpose |
 |---|---|
-| `run_three.sh` | Full end-to-end (Python + C++ stages) |
+| `scripts/run_three.sh` | Full end-to-end (Python + C++ stages) |
 | `scripts/train_classical.py` | Python models only |
-| `dl_pipeline.py` | Deep learning path |
+| `pipelines/dl_pipeline.py` | Deep learning path |
 
 Stages are discrete and independently runnable — closer to an Airflow DAG than a monolithic script.
 
@@ -158,8 +158,8 @@ The ensemble result combines TF-IDF word n-grams (1–3) and character n-grams (
 │   ├── test_deep_learning.py
 │   ├── test_cpp.py
 │   └── test_pipeline*.py
-├── dl_pipeline.py
-└── run_three.sh
+├── pipelines/dl_pipeline.py
+└── scripts/run_three.sh
 ```
 
 ---
@@ -168,7 +168,7 @@ The ensemble result combines TF-IDF word n-grams (1–3) and character n-grams (
 
 **Full pipeline (Python + C++):**
 ```bash
-bash run_three.sh
+bash scripts/run_three.sh
 ```
 
 **Python models only:**
